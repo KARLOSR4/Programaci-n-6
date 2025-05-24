@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+        /* Estilos CSS para la galería */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        
+        .imagen-galeria {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .imagen-galeria:hover {
+            transform: scale(1.03);
+        }
+        
+        .imagen-galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .descripcion {
+            padding: 10px;
+            background-color: rgba(237, 164, 234, 0.597);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Galería de Imágenes</h1>
+    
+    <div class="galeria">
+        <!-- Imagen 1 -->
+        <div class="imagen-galeria">
+         <a href="pagina2.php?imgn=imagenes/10.jpg"><img src="imageneshtml/10.jpg"></a>
+            <div class="descripcion">
+                <p>Control Xbox Series</p>
+            </div>
+        </div>
+        
+        <!-- Imagen 2 -->
+        <div class="imagen-galeria">
+           <a href="pagina2.php?imgn=imageneshtml/11.jpg"><img src="imageneshtml/11.jpg"></a>
+            <div class="descripcion">
+                <p>Dobby</p>
+            </div>
+        </div>
+        
+        <!-- Imagen 3 -->
+        <div class="imagen-galeria">
+          <a href="pagina2.php?imgn=imageneshtml/12.jpg"><img src="imageneshtml/12.jpg"></a>
+            <div class="descripcion">
+                <p>Escape 2010</p>
+            </div>
+        </div>
+        
+        <!-- Imagen 4 -->
+        <div class="imagen-galeria">
+        <a href="pagina2.php?imgn=imageneshtml/13.jpg"><img src="imageneshtml/13.jpg"></a>
+            <div class="descripcion">
+                <p>Gengar</p>
+            </div>
+        </div>
+        
+        <!-- Imagen 5 -->
+        <div class="imagen-galeria">
+           <a href="pagina2.php?imgn=imageneshtml/14.jpg"><img src="imageneshtml/14.jpg"></a>
+            <div class="descripcion">
+                <p>Giratina</p>
+            </div>
+        </div>
+        
+        <!-- Imagen 6 -->
+        <div class="imagen-galeria">
+           <a href="pagina2.php?imgn=imageneshtml/15.jpg"><img src="imageneshtml/15.jpg"></a>
+            <div class="descripcion">
+                <p>Terrain 2019</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

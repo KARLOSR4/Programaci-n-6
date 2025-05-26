@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de Boleto</title>
+    <link rel="stylesheet" href="Diseno.css">
+
+</head>
+<body>
+   
+    
+    <form action="boleto.php" method="POST">
+        <p><label>Nombre Completo</label></p>
+        <p><input type="text" name="nombre" required></p>
+
+        <p><label>Edad</label></p>
+        <p><input type="number" name="edad" required></p>
+
+        <p><label>Tipo de Función</label></p>
+        <p>
+            <select name="funcion" required>
+                <option value="2D">Función 2D</option>
+                <option value="3D">Función 3D</option>
+                <option value="IMAX">Función IMAX</option>
+                <option value="VIP">Sala VIP</option>
+            </select>
+        </p>
+
+        <p><label>¿Eres estudiante con credencial?</label></p>
+        <p><input type="checkbox" name="estudiante" value="si"> Sí</p>
+
+        <p><input type="submit" value="Generar Boleto"></p>
+    </form>
+</body>
+</html>
